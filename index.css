@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background: #0a0a0a;
     color: #e0e0e0;
@@ -14,7 +20,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     background: #0a0a0a;
     position: relative;
     overflow: hidden;
@@ -76,7 +82,7 @@ body {
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -88,7 +94,7 @@ body {
 .photo-wrapper {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     aspect-ratio: 1;
     margin: 0 auto;
 }
@@ -139,6 +145,7 @@ body {
 .label {
     font-size: 0.875rem;
     text-transform: uppercase;
+    font-style: italic;
     letter-spacing: 2px;
     color: #666;
     margin-bottom: 1.5rem;
@@ -146,9 +153,9 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: #ffffff;
     line-height: 1.1;
 }
@@ -160,13 +167,13 @@ h1 {
 .role-block {
     background: #111;
     border-left: 3px solid #333;
-    padding: 1.5rem;
-    margin: 2rem 0;
+    padding: 1rem;
+    margin: 1rem 0;
     border-radius: 2px;
 }
 
 .role-block h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     margin-bottom: 0.5rem;
@@ -186,7 +193,7 @@ h1 {
 
 .info-card {
     background: #111;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 2px;
     border: 1px solid #1a1a1a;
     transition: all 0.3s ease;
@@ -207,13 +214,13 @@ h1 {
 }
 
 .info-card p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #e0e0e0;
     font-weight: 500;
 }
 
 .cta-section {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
